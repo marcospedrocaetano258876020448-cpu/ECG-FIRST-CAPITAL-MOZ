@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-mz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | EGC FIRST CAPITAL MOZ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: #050505; color: white; }
+        .glass { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); backdrop-filter: blur(12px); }
+        .bg-first { background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%); }
+        .text-first { color: #4facfe; }
+    </style>
+</head>
+<body class="pb-24">
+
+    <header class="p-6 flex justify-between items-center max-w-4xl mx-auto">
+        <div>
+            <p class="text-[10px] text-slate-500 uppercase tracking-widest">Bem-vindo ao First</p>
+            <h1 class="text-xl font-800">Olá, Investidor <span class="text-first">👋</span></h1>
+        </div>
+        <div class="w-10 h-10 bg-first rounded-full flex items-center justify-center font-bold text-black text-xs">
+            ECG
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6">
+        <div class="bg-first p-8 rounded-[40px] shadow-2xl shadow-blue-500/20 text-black relative overflow-hidden">
+            <div class="relative z-10">
+                <p class="text-xs font-bold uppercase opacity-70 tracking-widest">Saldo Total Disponível</p>
+                <h2 class="text-5xl font-800 my-2 tracking-tighter">12.450,00 <span class="text-sm">MZN</span></h2>
+                <div class="flex gap-4 mt-6">
+                    <button class="bg-black text-white px-6 py-3 rounded-2xl text-xs font-bold hover:scale-105 transition">Levantar</button>
+                    <button class="bg-white/30 backdrop-blur text-black px-6 py-3 rounded-2xl text-xs font-bold hover:scale-105 transition">Recarregar</button>
+                </div>
+            </div>
+            <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-white/20 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 mt-6">
+            <div class="glass p-6 rounded-3xl">
+                <p class="text-[10px] text-slate-500 uppercase">Lucro Hoje</p>
+                <p class="text-xl font-bold text-green-400">+ 850 MZN</p>
+            </div>
+            <div class="glass p-6 rounded-3xl">
+                <p class="text-[10px] text-slate-500 uppercase">Planos Ativos</p>
+                <p class="text-xl font-bold">V4 Platinum</p>
+            </div>
+        </div>
+
+        <div class="glass mt-6 p-6 rounded-3xl border-dashed border-first/30 flex justify-between items-center">
+            <div>
+                <p class="text-xs font-bold">Programa de Afiliados</p>
+                <p class="text-[10px] text-slate-500">Ganhe 10% por cada convite</p>
+            </div>
+            <button class="text-first font-bold text-xs underline">Copiar Link</button>
+        </div>
+
+        <h3 class="mt-10 mb-6 font-bold text-slate-400 text-sm uppercase tracking-widest">Níveis Recomendados</h3>
+        <div class="space-y-4">
+            <div class="glass p-4 rounded-3xl flex justify-between items-center hover:border-first/50 transition">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center font-bold text-first text-xs">V3</div>
+                    <div>
+                        <p class="font-bold text-sm text-white">Prata Pulse</p>
+                        <p class="text-[10px] text-slate-500">2.500 MZN → 12.000 MZN</p>
+                    </div>
+                </div>
+                <button class="bg-white/5 px-4 py-2 rounded-xl text-[10px] font-bold">Ativar</button>
+            </div>
+        </div>
+    </main>
+
+    <nav class="fixed bottom-0 left-0 right-0 glass border-t-0 py-4 px-8 flex justify-between items-center rounded-t-[30px] z-50">
+        <div class="flex flex-col items-center gap-1 text-first">
+            <div class="w-1.5 h-1.5 bg-first rounded-full"></div>
+            <span class="text-[9px] font-bold">Home</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 text-slate-500">
+            <span class="text-[9px] font-bold">Mercado</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 text-slate-500">
+            <span class="text-[9px] font-bold">Equipa</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 text-slate-500">
+            <span class="text-[9px] font-bold">Perfil</span>
+        </div>
+    </nav>
+
+</body>
+                                                          </html>
+
